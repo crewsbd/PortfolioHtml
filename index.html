@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/svg" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img />
+      <h1>Brian Crews</h1>
+      <p>Web Developer</p>
+    </header>
+    <main>
+      <section
+        class="section"
+        style="background-image: url('./images/clouds.jpg')"
+      >
+        <h2>Web Development</h2>
+        <p>
+          These are some of the more interesting web development projects and
+          school work I've done. A large portion of these were completed as part of my course work at BYUI, but I've also made it a point to keep up-to-date with emerging technologies and stacks. Many of these are simple learning exercises, or the product of a course or tutorial.
+        </p>
+        <div class="pieces-collection">
+          <section class="piece">
+            <h3><a>College Scorecard Viewer</a></h3>
+            <div class="images-horizontal">
+              <img
+                src="/images/college_scorecard_viewer/sou.webp"
+                width="70"
+                height="70"
+                alt=""
+                class="clickable"
+              />
+            </div>
+            <p>
+              A basic, pure React page that pulls data from the US Department of
+              Educations College Scorecard API. Search for a school on the left,
+              click it and navigate through the information on the main view. I
+              made this so I could get some experience working in react without
+              a full stack framework. You will need a free API key to use it.
+            </p>
+            <div class="links">
+              <a
+                href="https://github.com/crewsbd/College-Scorecard-Viewer"
+                target="_blank"
+                >Repo</a
+              >
+
+              <a
+                href="https://crewsbd.github.io/College-Scorecard-Viewer/"
+                target="_blank"
+                >Deployment</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="section bg-gamedev">
+        <h2>Game Developer</h2>
+        <p>
+          I'm not unique in having a love for playing video games; I started on
+          the Atari 2600, but really fell in love with the Nintendo
+          Entertainment System(NES). I dream in 8 bit. When my family got our
+          first computer, an already out of date, low end Packard Bell 286, I
+          immediately thought about making games. A transcribed choose your own
+          adventure book, number guessing games, etc. Games have always been my
+          motivation for me to learn programming, so it would be strange to not
+          dedicate some space here. Below are a few small projects I have been
+          working on.
+        </p>
+        <div class="pieces-collection">
+          <section class="piece">
+            <h3><a>To Space</a></h3>
+            <div class="images-horizontal">
+              <img
+                src="/images/to_space/title_screen.webp"
+                width="70"
+                height="70"
+                alt="Title screen"
+                class="clickable"
+              />
+              <img
+                src="/images/to_space/gameplay1.webp"
+                width="70"
+                height="70"
+                alt="Game play image"
+                class="clickable"
+              /><img
+                src="/images/to_space/vs_code.webp"
+                width="70"
+                height="70"
+                alt="Code editor"
+                class="clickable"
+              />
+            </div>
+            <p>
+              To Space is a quick and dirty Javascript game that displays to an
+              HTML canvas element. It's played entirely with a mouse. Just click
+              on the screen in the direction you want the rocket to move and try
+              to get as high as you can. There are fuel drops along the way to
+              help you go farther. Although simple and crude, all of the images
+              are original and were made in Inkscape as SVG files.
+            </p>
+
+            <div class="links">
+              <a href="https://github.com/crewsbd/tospace" target="_blank"
+                >Repo</a
+              >
+              <a
+                href="https://crewsbd.github.io/tospace/tospace.html"
+                target="_blank"
+                >Play game</a
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+      <dialog id="image-dialog">
+        <img
+          class="image"
+          src="/images/no_image_light.svg"
+          id="image-dialog-image"
+        />
+      </dialog>
+    </main>
+    <footer>
+      <div>&copy; 2025 - Brian Crews | <a href="https://linkedin.com/in/bdcrews" target="_blank">linkedin.com/in/bdcrews</a></div>
+      <div><a href="mailto:bdcrews@protonmail.com">bdcrews@protonmail.com</a></div>
+    </footer>
+    <script src="/scripts/image-viewer.js"></script>
+  </body>
+</html>
